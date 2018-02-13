@@ -12,24 +12,48 @@ body{
   width: 100%;
   border: 1px solid black
 }
-.promo img{
+.promo .rightcorner{
   width: 15%;
   height: auto;
+  padding: 0.5%;
+  text-align: right;
   position: absolute;
   top: 1%;
-  right: 1%;
+  right: 1.5%;
+  background-color: rgba(0,0,0,.5);
   /*margin-right: 40px*/
 }
+.promo .rightcorner img{
+
+}
+
+.promo .rightcorner .social{
+  text-align: center;
+  margin: auto;
+}
+  .promo .rightcorner i{
+        display: inline-block;
+        width: 33px;
+        height: 33px;
+        line-height: 33px;
+        text-align: center;
+        color: Black;
+        font-size: 25px;
+        border-radius: 50%;
+        background-color: White;
+        margin-left: 2%;
+        margin-right: 2%;
+  }
 
 .promo .caption{
   position: absolute;
-  font-size: 16px;
-  width: auto;
+  font-size: 30px;
+  width: 250px;
   height: auto;
   padding:4px;
   top: 1%;
   left: 1%;
-  background-color: rgba(0,0,0,.5)
+  background-color: rgba(0,0,0,.5);
 }
 
 .promo .caption p{
