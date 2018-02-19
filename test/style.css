@@ -3,14 +3,14 @@ body{
 }
 
 .promo{
-  position: relative;
-/*  margin: 40px;*/
+  /*position: relative;*/
   font-size: 16px;
   overflow: hidden;
 }
 .promo video{
+  position: fixed;
+  left: 0;
   width: 100%;
-  border: 1px solid black
 }
 .promo .rightcorner{
   width: 15%;
@@ -18,11 +18,11 @@ body{
   padding: 0.5%;
   text-align: right;
   position: absolute;
-  top: 1%;
-  right: 1.5%;
+  top: 4%;
+  right: 2.5%;
   background-color: rgba(0,0,0,.5);
-  /*margin-right: 40px*/
 }
+
 .promo .rightcorner img{
 
 }
@@ -47,17 +47,16 @@ body{
 
 .promo .caption{
   position: absolute;
-  font-size: 30px;
-  width: 250px;
+  font-size: 20px;
+  width: 200px;
   height: auto;
-  padding:4px;
-  top: 1%;
-  left: 1%;
+  padding: 4px;
+  top: 4%;
+  left: 2.5%;
   background-color: rgba(0,0,0,.5);
 }
 
 .promo .caption p{
-  /*font-size: 16px;*/
   margin: 0;
   padding: 2px;
   text-align: center;
