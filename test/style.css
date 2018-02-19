@@ -1,6 +1,103 @@
+
+
 body{
   margin: 0;
+  display: block;
 }
+
+.promo{
+  /*position: relative;*/
+  font-size: 16px;
+  overflow: hidden;
+}
+.promo video{
+  position: fixed;
+  left: 0;
+  width: 100%;
+}
+.promo .rightcorner{
+  width: 100px;
+  height: auto;
+  padding: 0.5%;
+  text-align: right;
+  position: absolute;
+  top: 3%;
+  right: 2.5%;
+  background-color: rgba(0,0,0,.5);
+}
+
+.promo .rightcorner img{
+
+}
+
+.promo .rightcorner .social{
+  display: none;
+  text-align: center;
+  margin: auto;
+}
+  .promo .rightcorner i{
+        display: inline-block;
+        width: 33px;
+        height: 33px;
+        line-height: 33px;
+        text-align: center;
+        color: Black;
+        font-size: 25px;
+        border-radius: 50%;
+        background-color: White;
+        margin-left: 2%;
+        margin-right: 2%;
+  }
+
+  .promo .caption{
+    position: absolute;
+    font-size: 13px;
+    width: 100px;
+    height: auto;
+    padding: 4px;
+    top: 3%;
+    left: 2.5%;
+    background-color: rgba(0,0,0,.5);
+  }
+
+  .promo .caption p{
+    margin: 0;
+    padding: 2px;
+    text-align: center;
+    color: white;
+    }
+
+    .promo .rightbottom{
+      width: 100px;
+      height: auto;
+      padding: 0.5%;
+      text-align: right;
+      position: absolute;
+      top: 90%;
+      right: 2.5%;
+      background-color: rgba(0,0,0,.5);
+    }
+
+  .promo .rightbottom .mobilsocial{
+    /*display: none;*/
+    /*text-align: right;*/
+    margin: auto;
+  }
+    .promo .mobilsocial i{
+          display: inline-block;
+          width: 33px;
+          height: 33px;
+          line-height: 33px;
+          text-align: center;
+          color: Black;
+          font-size: 25px;
+          border-radius: 50%;
+          background-color: White;
+          margin-left: 2%;
+          margin-right: 2%;
+    }
+
+@media screen and (min-width: 950px){
 
 .promo{
   /*position: relative;*/
@@ -28,6 +125,7 @@ body{
 }
 
 .promo .rightcorner .social{
+  display: block;
   text-align: center;
   margin: auto;
 }
@@ -61,4 +159,36 @@ body{
   padding: 2px;
   text-align: center;
   color: white;
+  }
+
+  .promo .rightbottom{
+    width: 100px;
+    height: auto;
+    padding: 0.5%;
+    text-align: right;
+    position: absolute;
+    top: 90%;
+    right: 2.5%;
+    background-color: rgba(0,0,0,.5);
+  }
+
+.promo .rightbottom .mobilsocial{
+  display: none;
+  /*text-align: right;*/
+  margin: auto;
+}
+  .promo .mobilsocial i{
+        display: inline-block;
+        width: 33px;
+        height: 33px;
+        line-height: 33px;
+        text-align: center;
+        color: Black;
+        font-size: 25px;
+        border-radius: 50%;
+        background-color: White;
+        margin-left: 2%;
+        margin-right: 2%;
+  }
+
 }
