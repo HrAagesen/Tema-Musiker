@@ -11,8 +11,8 @@ body{
 
 .promo video{
   position: fixed;
-  left: 0;
-  width: 100%;
+  left: -170%;
+  /*width: 100%;*/
 }
 
 .promo .rightcorner{
@@ -74,8 +74,38 @@ body{
       margin-left: 2%;
       margin-right: 2%;
     }
+/*her starter media screen kun for video i midten*/
+    @media screen and (min-width: 390px) {
+      .promo video{
+        position: fixed;
+        left: -150%;
+        /*width: 100%;*/
+      }
+    }
 
+    @media screen and (min-width: 420px) {
+      .promo video{
+        position: fixed;
+        left: -140%;
+        /*width: 100%;*/
+      }
+    }
+
+    @media screen and (min-width: 450px) {
+      .promo video{
+        position: fixed;
+        left: -120%;
+        /*width: 100%;*/
+      }
+    }
+/*her slutter midter fokus, dog er det videre ført i de andre screen*/
     @media screen and (min-width: 490px) {
+
+      .promo video{
+        position: fixed;
+        left: -110%;
+        /*width: 100%;*/
+      }
 
       .promo .rightcorner{
         width: 22%;
@@ -84,7 +114,7 @@ body{
       }
 
         .promo .caption{
-          font-size: 15%;
+          font-size: 12px;
           width: 20%;
           top: 1.5%;
           left: 2%;
@@ -107,8 +137,44 @@ body{
       }
   }
 
+  @media screen and (min-width: 520px) {
+    .promo video{
+      position: fixed;
+      left: -95%;
+      /*width: 100%;*/
+    }
+  }
+
+  @media screen and (min-width: 550px) {
+    .promo video{
+      position: fixed;
+      left: -80%;
+      /*width: 100%;*/
+    }
+  }
+
+  @media screen and (min-width: 610px) {
+    .promo video{
+      position: fixed;
+      left: -70%;
+      /*width: 100%;*/
+    }
+  }
+  @media screen and (min-width: 640px) {
+    .promo video{
+      position: fixed;
+      width: 100%;
+      left: 0;
+    }
+  }
+
 @media screen and (min-width: 680px){
 
+  .promo video{
+    position: fixed;
+    width: 100%;
+    left: 0;
+  }
   .promo .rightcorner{
     width: 20%;
     top: 2.5%;
@@ -135,7 +201,7 @@ body{
     }
 
   .promo .caption{
-    font-size: 20px;
+    font-size: 18px;
     width: 22%;
     top: 2.5%;
     left: 1.5%;
@@ -171,7 +237,7 @@ body{
   }
 
 .promo .caption{
-  font-size: 25px;
+  font-size: 23px;
   width: 20%;
   top: 4%;
   left: 2.5%;
