@@ -6,122 +6,156 @@ body{
 }
 
 .promo{
-  /*position: relative;*/
-  font-size: 16px;
   overflow: hidden;
 }
+
 .promo video{
   position: fixed;
   left: 0;
   width: 100%;
 }
+
 .promo .rightcorner{
-  width: 100px;
+  width: 22%;
   height: auto;
   padding: 0.5%;
   text-align: right;
   position: absolute;
-  top: 3%;
-  right: 2.5%;
+  top: 1.5%;
+  right: 2%;
   background-color: rgba(0,0,0,.5);
-}
-
-.promo .rightcorner img{
-
 }
 
 .promo .rightcorner .social{
   display: none;
-  text-align: center;
-  margin: auto;
 }
-  .promo .rightcorner i{
-        display: inline-block;
-        width: 33px;
-        height: 33px;
-        line-height: 33px;
-        text-align: center;
-        color: Black;
-        font-size: 25px;
-        border-radius: 50%;
-        background-color: White;
-        margin-left: 2%;
-        margin-right: 2%;
-  }
 
   .promo .caption{
     position: absolute;
-    font-size: 13px;
-    width: 100px;
+    font-size: 60%;
+    width: 20%;
     height: auto;
     padding: 4px;
-    top: 3%;
-    left: 2.5%;
+    top: 1.5%;
+    left: 2%;
     background-color: rgba(0,0,0,.5);
   }
 
   .promo .caption p{
     margin: 0;
-    padding: 2px;
     text-align: center;
     color: white;
     }
 
     .promo .rightbottom{
-      width: 100px;
+      width: 110px;
       height: auto;
       padding: 0.5%;
       text-align: right;
       position: absolute;
-      top: 90%;
-      right: 2.5%;
+      top: 95%;
+      right: 1.5%;
       background-color: rgba(0,0,0,.5);
     }
 
   .promo .rightbottom .mobilsocial{
-    /*display: none;*/
-    /*text-align: right;*/
     margin: auto;
   }
     .promo .mobilsocial i{
-          display: inline-block;
-          width: 33px;
-          height: 33px;
-          line-height: 33px;
-          text-align: center;
-          color: Black;
-          font-size: 25px;
-          border-radius: 50%;
-          background-color: White;
-          margin-left: 2%;
-          margin-right: 2%;
+      display: inline-block;
+      width: 19.8px;
+      height: 19.8px;
+      line-height: 20px;
+      text-align: center;
+      color: Black;
+      font-size: 80%;
+      border-radius: 50%;
+      background-color: White;
+      margin-left: 2%;
+      margin-right: 2%;
     }
 
-@media screen and (min-width: 950px){
+    @media screen and (min-width: 490px) {
 
-.promo{
-  /*position: relative;*/
-  font-size: 16px;
-  overflow: hidden;
+      .promo .rightcorner{
+        width: 22%;
+        top: 1.5%;
+        right: 2%;
+      }
+
+        .promo .caption{
+          font-size: 15%;
+          width: 20%;
+          top: 1.5%;
+          left: 2%;
+        }
+
+          .promo .rightbottom{
+            width: 110px;
+            top: 93%;
+            right: 1.5%;
+          }
+
+        .promo .rightbottom .mobilsocial{
+          margin: auto;
+        }
+        .promo .mobilsocial i{
+          width: 19.8px;
+          height: 19.8px;
+          line-height: 20px;
+          font-size: 80%;
+      }
+  }
+
+@media screen and (min-width: 680px){
+
+  .promo .rightcorner{
+    width: 20%;
+    top: 2.5%;
+    right: 1.5%;
+  }
+
+  .promo .rightcorner .social{
+    display: block;
+    text-align: center;
+    margin: auto;
+  }
+    .promo .rightcorner i{
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      line-height: 25px;
+      text-align: center;
+      color: Black;
+      font-size: 16px;
+      border-radius: 50%;
+      background-color: White;
+      margin-left: 2%;
+      margin-right: 2%;
+    }
+
+  .promo .caption{
+    font-size: 20px;
+    width: 22%;
+    top: 2.5%;
+    left: 1.5%;
+  }
+
+  .promo .caption p{
+      padding: 2px;
+    }
+
+    .promo .rightbottom{
+      display: none;
+    }
 }
-.promo video{
-  position: fixed;
-  left: 0;
-  width: 100%;
-}
+
+@media screen and (min-width: 880px){
+
 .promo .rightcorner{
-  width: 15%;
-  height: auto;
-  padding: 0.5%;
-  text-align: right;
-  position: absolute;
+  width: 20%;
   top: 4%;
   right: 2.5%;
-  background-color: rgba(0,0,0,.5);
-}
-
-.promo .rightcorner img{
-
 }
 
 .promo .rightcorner .social{
@@ -130,65 +164,55 @@ body{
   margin: auto;
 }
   .promo .rightcorner i{
-        display: inline-block;
-        width: 33px;
-        height: 33px;
-        line-height: 33px;
-        text-align: center;
-        color: Black;
-        font-size: 25px;
-        border-radius: 50%;
-        background-color: White;
-        margin-left: 2%;
-        margin-right: 2%;
+    width: 33px;
+    height: 33px;
+    line-height: 33px;
+    font-size: 20px;
   }
 
 .promo .caption{
-  position: absolute;
-  font-size: 20px;
-  width: 200px;
-  height: auto;
-  padding: 4px;
+  font-size: 25px;
+  width: 20%;
   top: 4%;
   left: 2.5%;
-  background-color: rgba(0,0,0,.5);
 }
-
-.promo .caption p{
-  margin: 0;
-  padding: 2px;
-  text-align: center;
-  color: white;
-  }
-
   .promo .rightbottom{
-    width: 100px;
-    height: auto;
-    padding: 0.5%;
-    text-align: right;
-    position: absolute;
-    top: 90%;
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+
+  .promo .rightcorner{
+    width: 20%;
+    top: 4%;
     right: 2.5%;
-    background-color: rgba(0,0,0,.5);
   }
 
-.promo .rightbottom .mobilsocial{
-  display: none;
-  /*text-align: right;*/
-  margin: auto;
-}
-  .promo .mobilsocial i{
-        display: inline-block;
-        width: 33px;
-        height: 33px;
-        line-height: 33px;
-        text-align: center;
-        color: Black;
-        font-size: 25px;
-        border-radius: 50%;
-        background-color: White;
-        margin-left: 2%;
-        margin-right: 2%;
+  .promo .rightcorner img{
+
   }
 
-}
+  .promo .rightcorner .social{
+    display: block;
+    text-align: center;
+    margin: auto;
+  }
+    .promo .rightcorner i{
+          width: 33px;
+          height: 33px;
+          line-height: 33px;
+          font-size: 20px;
+    }
+
+  .promo .caption{
+    font-size: 30px;
+    width: 20%;
+    top: 4%;
+    left: 2.5%;
+  }
+
+    .promo .rightbottom{
+      display: none;
+    }
+  }
