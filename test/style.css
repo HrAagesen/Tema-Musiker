@@ -11,8 +11,7 @@ body{
 
 .promo video{
   position: fixed;
-  left: -170%;
-  /*width: 100%;*/
+  transform: translate(-50%,0%);
 }
 
 .promo .rightcorner{
@@ -74,37 +73,11 @@ body{
       margin-left: 2%;
       margin-right: 2%;
     }
-/*her starter media screen kun for video i midten*/
-    @media screen and (min-width: 390px) {
-      .promo video{
-        position: fixed;
-        left: -150%;
-        /*width: 100%;*/
-      }
-    }
 
-    @media screen and (min-width: 420px) {
-      .promo video{
-        position: fixed;
-        left: -140%;
-        /*width: 100%;*/
-      }
-    }
-
-    @media screen and (min-width: 450px) {
-      .promo video{
-        position: fixed;
-        left: -120%;
-        /*width: 100%;*/
-      }
-    }
-/*her slutter midter fokus, dog er det videre ført i de andre screen*/
     @media screen and (min-width: 490px) {
 
       .promo video{
         position: fixed;
-        left: -110%;
-        /*width: 100%;*/
       }
 
       .promo .rightcorner{
@@ -137,43 +110,12 @@ body{
       }
   }
 
-  @media screen and (min-width: 520px) {
-    .promo video{
-      position: fixed;
-      left: -95%;
-      /*width: 100%;*/
-    }
-  }
-
-  @media screen and (min-width: 550px) {
-    .promo video{
-      position: fixed;
-      left: -80%;
-      /*width: 100%;*/
-    }
-  }
-
-  @media screen and (min-width: 610px) {
-    .promo video{
-      position: fixed;
-      left: -70%;
-      /*width: 100%;*/
-    }
-  }
-  @media screen and (min-width: 640px) {
-    .promo video{
-      position: fixed;
-      width: 100%;
-      left: 0;
-    }
-  }
-
 @media screen and (min-width: 680px){
 
   .promo video{
     position: fixed;
-    width: 100%;
-    left: 0;
+  /*  width: 100%;*/
+
   }
   .promo .rightcorner{
     width: 20%;
@@ -218,6 +160,12 @@ body{
 
 @media screen and (min-width: 880px){
 
+  .promo video{
+    position: fixed;
+    transform: translate(-30%,0);
+    width: 100%;
+  }
+
 .promo .rightcorner{
   width: 20%;
   top: 4%;
@@ -248,6 +196,12 @@ body{
 }
 
 @media screen and (min-width: 1200px) {
+
+  .promo video{
+    position: fixed;
+    transform: none;
+    width: 100%;
+  }
 
   .promo .rightcorner{
     width: 20%;

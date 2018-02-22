@@ -1,9 +1,286 @@
 //sass doc
 //import af alle docs til dette hoved sass
 
-
-
-
-
-
 //alle imports over denne, fra hver sides sass
+
+body{
+  margin: 0;
+  display: block;
+
+
+.promo{
+  overflow: hidden;
+
+
+ video{
+  position: fixed;
+  transform: translate(-50%,0%);
+}
+
+.rightcorner{
+  width: 22%;
+  height: auto;
+  padding: 0.5%;
+  text-align: right;
+  position: absolute;
+  top: 1.5%;
+  right: 2%;
+  background-color: rgba(0,0,0,.5);
+
+  .social{
+    display: none;
+    }
+  }
+}
+.caption{
+    position: absolute;
+    font-size: 60%;
+    width: 20%;
+    height: auto;
+    padding: 4px;
+    top: 1.5%;
+    left: 2%;
+    background-color: rgba(0,0,0,.5);
+
+      p{
+      margin: 0;
+      text-align: center;
+      color: white;
+      }
+  }
+
+      .soundbuttom{
+        display: none;
+      }
+
+      .rightbottom{
+      width: 110px;
+      height: auto;
+      padding: 0.5%;
+      text-align: right;
+      position: absolute;
+      top: 95%;
+      right: 1.5%;
+      background-color: rgba(0,0,0,.5);
+
+      .mobilsocial{
+        margin: auto;
+      }
+          i{
+          display: inline-block;
+          width: 19.8px;
+          height: 19.8px;
+          line-height: 20px;
+          text-align: center;
+          color: Black;
+          font-size: 80%;
+          border-radius: 50%;
+          background-color: White;
+          margin-left: 2%;
+          margin-right: 2%;
+          }
+        }
+}
+
+    @media screen and (min-width: 490px) {
+
+      body{
+
+      .promo {
+
+
+      video{
+        position: fixed;
+
+        .rightcorner{
+        width: 22%;
+        top: 1.5%;
+        right: 2%;
+
+
+         .caption{
+          font-size: 12px;
+          width: 20%;
+          top: 1.5%;
+          left: 2%;
+        }
+      }
+    }
+}
+      .rightbottom{
+      width: 110px;
+      top: 93%;
+      right: 1.5%;
+
+
+        .mobilsocial{
+          margin: auto;
+
+          i{
+          width: 19.8px;
+          height: 19.8px;
+          line-height: 20px;
+          font-size: 80%;
+          }
+      }
+    }
+  }
+}
+@media screen and (min-width: 680px){
+
+  body{
+
+  .promo {
+
+    video{
+    position: fixed;
+
+
+  }
+    .rightcorner{
+    width: 20%;
+    top: 2.5%;
+    right: 1.5%;
+
+
+    .social{
+    display: block;
+    text-align: center;
+    margin: auto;
+
+      i{
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      line-height: 25px;
+      text-align: center;
+      color: Black;
+      font-size: 16px;
+      border-radius: 50%;
+      background-color: White;
+      margin-left: 2%;
+      margin-right: 2%;
+      }
+      }
+    }
+}
+    .caption{
+    font-size: 18px;
+    width: 22%;
+    top: 2.5%;
+    left: 1.5%;
+
+
+      p{
+      padding: 2px;
+    }
+    }
+
+    .rightbottom{
+      display: none;
+    }
+}
+}
+@media screen and (min-width: 880px){
+
+  body{
+
+  .promo {
+
+    video{
+    position: fixed;
+    transform: translate(-30%,0);
+    width: 100%;
+  }
+
+  .rightcorner{
+  width: 20%;
+  top: 4%;
+  right: 2.5%;
+
+
+  .social{
+  display: block;
+  text-align: center;
+  margin: auto;
+
+    i{
+    width: 33px;
+    height: 33px;
+    line-height: 33px;
+    font-size: 20px;
+    }
+    }
+  }
+}
+
+.caption{
+  font-size: 23px;
+  width: 20%;
+  top: 4%;
+  left: 2.5%;
+}
+  .rightbottom{
+    display: none;
+  }
+
+  .soundoff{
+    position: absolute;
+    display: none;
+    top: 4%;
+    font-size: 50px;
+    left: 50%;
+  }
+  .soundon{
+    position: absolute;
+    display: block;
+    top: 4%;
+    font-size: 50px;
+    left: 50%;
+  }
+}
+}
+@media screen and (min-width: 1200px) {
+
+  body{
+
+  .promo {
+
+    video{
+    position: fixed;
+    transform: none;
+    width: 100%;
+  }
+
+  .rightcorner{
+    width: 20%;
+    top: 4%;
+    right: 2.5%;
+
+    .social{
+    display: block;
+    text-align: center;
+    margin: auto;
+
+          i{
+          width: 33px;
+          height: 33px;
+          line-height: 33px;
+          font-size: 20px;
+          }
+        }
+    }
+}
+
+  .promo .caption{
+    font-size: 30px;
+    width: 20%;
+    top: 4%;
+    left: 2.5%;
+  }
+
+    .promo .rightbottom{
+      display: none;
+    }
+  }
+}
