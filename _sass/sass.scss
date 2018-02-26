@@ -224,22 +224,17 @@ body{
     display: none;
   }
 
-  .soundoff{
-    position: absolute;
-    display: none;
-    top: 4%;
-    font-size: 50px;
-    left: 50%;
-  }
-  .soundon{
-    position: absolute;
-    display: block;
-    top: 4%;
-    font-size: 50px;
-    left: 50%;
-  }
-}
-}
+     #mute{
+       position: absolute;
+       display: block;
+       top: 4%;
+       font-size: 50px;
+       left: 50%;
+     }
+   }
+ }
+
+
 @media screen and (min-width: 1200px) {
 
   body{

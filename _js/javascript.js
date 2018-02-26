@@ -1,4 +1,5 @@
-//javascript filen
+
+$( document ).ready(function() {
 // Set the date we're counting down to
 var countDownDate = new Date("Sep 12, 2018 12:00:00").getTime();
 
@@ -27,3 +28,29 @@ var x = setInterval(function() {
         document.getElementById("demo").innerHTML = "Udgivet";
     }
 }, 1000);
+
+    // Video
+    var video = document.getElementById("myVideo");
+    //knap
+    var muteButton = $("#mute");
+    var playButton = document.getElementById("playknap");
+
+
+
+
+    // Event listener for the mute button
+    muteButton.on("click",function() {
+         $(".fa-volume-off, .fa-volume-up").toggleClass("fa-volume-up fa-volume-off");
+         if (video.muted == false) {
+        // Mute the video
+        video.muted = true;
+
+          }
+      else {
+        // Unmute the video
+        video.muted = false;
+
+      }
+            console.log(video.muted);
+    });
+});/*lukkker alt sammen*/

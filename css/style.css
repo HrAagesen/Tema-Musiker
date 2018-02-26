@@ -170,14 +170,7 @@ body .rightbottom i {
   body .rightbottom {
     display: none;
   }
-  body .soundoff {
-    position: absolute;
-    display: none;
-    top: 4%;
-    font-size: 50px;
-    left: 50%;
-  }
-  body .soundon {
+  body #mute {
     position: absolute;
     display: block;
     top: 4%;
