@@ -141,8 +141,9 @@ body .rightbottom i {
 @media screen and (min-width: 880px) {
   body .promo video {
     position: fixed;
-    -webkit-transform: translate(-30%, 0);
-            transform: translate(-30%, 0);
+    left: 0;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
     width: 100%;
   }
   body .promo .rightcorner {
@@ -162,7 +163,7 @@ body .rightbottom i {
     font-size: 20px;
   }
   body .caption {
-    font-size: 23px;
+    font-size: 25px;
     width: 20%;
     top: 4%;
     left: 2.5%;
@@ -171,11 +172,14 @@ body .rightbottom i {
     display: none;
   }
   body #mute {
+    left: 45%;
     position: absolute;
     display: block;
     top: 4%;
-    font-size: 50px;
-    left: 50%;
+    font-size: 65px;
+    padding: 1%;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
   }
 }
 @media screen and (min-width: 1200px) {
