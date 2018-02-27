@@ -1,8 +1,13 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   margin: 0;
   display: block;
-}
-body .promo {
   overflow: hidden;
 }
 body .promo video {
@@ -209,5 +214,86 @@ body .rightbottom i {
   }
   body .promo .rightbottom {
     display: none;
+  }
+  body .knap {
+    width: 100px;
+    height: 100px;
+    background: white;
+    position: absolute;
+    left: 50%;
+    bottom: -50px;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  body .knap i {
+    height: 50px;
+    width: 100px;
+    padding-left: 35%;
+    padding-top: 8%;
+    font-size: 46px;
+  }
+  body .mercoverlay {
+    height: 500px;
+    width: 100%;
+    background-color: white;
+    display: none;
+    position: absolute;
+    bottom: 0;
+  }
+  body .mercoverlay .control_prev {
+    position: absolute;
+    top: 210px;
+    left: 5%;
+    text-decoration: none;
+    font-size: 60px;
+    font-family: Roboto;
+  }
+  body .mercoverlay .control_next {
+    position: absolute;
+    top: 210px;
+    right: 5%;
+    text-decoration: none;
+    font-size: 60px;
+    font-family: Roboto;
+  }
+  body .mercoverlay #slider {
+    width: 1005px;
+    height: 400px;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 20px;
+  }
+  body .mercoverlay #slider .slides {
+    display: block;
+    width: 3015px;
+    height: 400px;
+  }
+  body .mercoverlay #slider .slide {
+    float: left;
+    list-style-type: none;
+    width: 325px;
+    height: 400px;
+    margin: 0 5px;
+  }
+  body .mercoverlay #slider .slide p {
+    font-family: Istok;
+    text-align: center;
+    margin-top: 10px;
+    color: grey;
+  }
+  body .mercoverlay #slider .slide p:nth-of-type(2) {
+    font-weight: bold;
+    color: black;
+  }
+  body .mercoverlay #slider .left1 {
+    margin-left: -335px;
+  }
+  body .mercoverlay #slider .left2 {
+    margin-left: -670px;
+  }
+  body .mercoverlay #slider .left3 {
+    margin-left: -1005px;
   }
 }

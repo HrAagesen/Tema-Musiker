@@ -2,15 +2,20 @@
 //import af alle docs til dette hoved sass
 
 //alle imports over denne, fra hver sides sass
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 
+}
 body{
   margin: 0;
   display: block;
+  overflow: hidden;
+
 
 
 .promo{
-  overflow: hidden;
-
 
  video{
   position: fixed;
@@ -184,7 +189,6 @@ body{
 @media screen and (min-width: 880px){
 
   body{
-
   .promo {
 
     video{
@@ -276,6 +280,106 @@ body{
 
     .promo .rightbottom{
       display: none;
+    }
+
+    // OVERLAY CSS
+
+    .knap{
+      width: 100px;
+      height: 100px;
+      background: white;
+      position: absolute;
+      left: 50%;
+      bottom: -50px;
+      transform: translateX(-50%);
+      border-radius: 50%;
+      overflow: hidden;
+
+      i {
+        height: 50px;
+        width: 100px;
+        padding-left: 35%;
+        padding-top: 8%;
+        font-size: 46px;
+      }
+    }
+
+//  Steffens kode ----------------
+
+    .mercoverlay {
+      height: 500px;
+      width: 100%;
+      background-color: white;
+      // aktiver når du er færdig med at style
+      display: none;
+      position: absolute;
+      bottom: 0;
+
+      .control_prev{
+        position: absolute;
+        top: 210px;
+        left: 5%;
+        text-decoration: none;
+        font-size: 60px;
+        font-family: Roboto;
+      }
+
+      .control_next{
+        position: absolute;
+        top: 210px;
+        right: 5%;
+        text-decoration: none;
+        font-size: 60px;
+        font-family: Roboto;
+      }
+
+
+
+      #slider {
+        width: 1005px;
+        height: 400px;
+        overflow: hidden;
+        margin: auto;
+        margin-top: 20px;
+
+        .slides {
+          display: block;
+          width: 3015px;
+          height: 400px;
+        }
+
+        .slide {
+          float: left;
+          list-style-type: none;
+          width: 325px;
+          height: 400px;
+          margin: 0 5px;
+
+          p{
+            font-family: Istok;
+            text-align: center;
+            margin-top: 10px;
+            color: grey;
+
+            &:nth-of-type(2) {
+              font-weight: bold;
+              color: black;
+            }
+          }
+        }
+
+        .left1 {
+          margin-left: -335px;
+        }
+
+          .left2 {
+            margin-left: -670px;
+        }
+
+        .left3{
+          margin-left: -1005px;
+        }
+      }
     }
   }
 }

@@ -54,3 +54,55 @@ var x = setInterval(function() {
             console.log(video.muted);
     });
 });/*lukkker alt sammen*/
+
+// Overlay
+
+$(function(){
+
+  const $menu = $('.knap');
+  const $mercOverlay = $('.mercoverlay');
+
+  $menu.on('click', () => {
+    $mercOverlay.show();
+  })
+// aktiver inden færdig
+  $mercOverlay.on('mouseleave', () => {
+    $mercOverlay.hide();
+  })
+
+});
+
+//  slider
+
+$(function() {
+
+  var width = 335;
+  var animationSpeed = 500;
+  var currentSlide = 1;
+
+  var $slider = $('#slider');
+  var $slideContainer = $slider.find('.slides');
+  var $slides = $slideContainer.find('.slide');
+
+  // var control_next = $('control_next');
+
+  $('.control_next').click(function () {
+    $slideContainer.animate({'margin-left': '-='+width}, animationSpeed, function () {
+      currentSlide++;
+        if (currentSlide === $slides.length-5) {
+          currentSlide = 1;
+          $slideContainer.css('margin-left', 0);
+        }
+      });
+    });
+
+  $('.control_prev').click(function () {
+    $slideContainer.animate({'margin-left': '+='+width}, animationSpeed, function () {
+      currentSlide--;
+        if (currentSlide === -2) {
+          currentSlide = 1;
+          $slideContainer.css('margin-left', 0);
+        }
+      });
+    });
+});
