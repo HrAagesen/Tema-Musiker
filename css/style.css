@@ -11,6 +11,9 @@ body {
   overflow: hidden;
   background-color: black;
 }
+body a {
+  text-decoration: none;
+}
 body .promo video {
   position: fixed;
   -webkit-transform: translate(-50%, 0%);
@@ -145,10 +148,11 @@ body .mercoverlay #slider .slide {
   margin: 0 5px;
 }
 body .mercoverlay #slider .slide p {
-  font-family: Istok;
+  font-family: Istok Web;
   text-align: center;
   margin-top: 10px;
   color: grey;
+  text-decoration: none;
 }
 body .mercoverlay #slider .slide p:nth-of-type(2) {
   font-weight: bold;
@@ -391,7 +395,7 @@ body .mercoverlay #slider .left4 {
     margin: 0 5px;
   }
   body .mercoverlay #slider .slide p {
-    font-family: Istok;
+    font-family: Istok Web;
     text-align: center;
     margin-top: 10px;
     color: grey;

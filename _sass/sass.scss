@@ -6,13 +6,17 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-
 }
+
 body{
   margin: 0;
   display: block;
   overflow: hidden;
   background-color: black;
+
+  a {
+    text-decoration: none;
+  }
 
   .promo{
 
@@ -181,10 +185,11 @@ body{
               margin: 0 5px;
 
               p{
-                font-family: Istok;
+                font-family: Istok Web;
                 text-align: center;
                 margin-top: 10px;
                 color: grey;
+                text-decoration: none;
 
                 &:nth-of-type(2) {
                   font-weight: bold;
@@ -646,7 +651,7 @@ body{
           margin: 0 5px;
 
           p{
-            font-family: Istok;
+            font-family: Istok Web;
             text-align: center;
             margin-top: 10px;
             color: grey;
