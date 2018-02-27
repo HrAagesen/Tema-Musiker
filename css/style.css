@@ -29,18 +29,20 @@ body .promo .rightcorner .social {
 }
 body .caption {
   position: absolute;
-  font-size: 14px;
-  width: 112px;
+  font-size: 10px;
+  width: 115px;
   height: auto;
   padding: 4px;
   top: 4.5%;
   left: 5%;
   background-color: rgba(0, 0, 0, 0.05);
+  font-family: Istok Web;
+  color: white;
 }
-body .caption p {
+body .caption div p {
   margin: 0;
   text-align: center;
-  color: white;
+  letter-spacing: 5px;
 }
 body .soundbuttom {
   display: none;
@@ -51,9 +53,8 @@ body .rightbottom {
   padding: 0.5%;
   text-align: right;
   position: absolute;
-  top: 95%;
-  right: 1.5%;
-  background-color: rgba(0, 0, 0, 0.5);
+  bottom: 2%;
+  right: 5%;
 }
 body .rightbottom .mobilsocial {
   margin: auto;
@@ -64,10 +65,9 @@ body .rightbottom i {
   height: 19.8px;
   line-height: 20px;
   text-align: center;
-  color: Black;
+  color: white;
   font-size: 80%;
   border-radius: 50%;
-  background-color: White;
   margin-left: 2%;
   margin-right: 2%;
 }
@@ -76,7 +76,7 @@ body .knap {
   height: 50px;
   background: white;
   position: absolute;
-  left: 50%;
+  left: 25%;
   bottom: -25px;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -105,6 +105,7 @@ body .mercoverlay .control_prev {
   text-decoration: none;
   font-size: 60px;
   font-family: Roboto;
+  color: black;
 }
 body .mercoverlay .control_next {
   position: absolute;
@@ -113,6 +114,16 @@ body .mercoverlay .control_next {
   text-decoration: none;
   font-size: 60px;
   font-family: Roboto;
+  color: black;
+}
+body .mercoverlay .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: Roboto;
+  color: black;
 }
 body .mercoverlay #slider {
   width: 335px;
@@ -180,6 +191,23 @@ body .mercoverlay #slider .left4 {
   }
 }
 @media screen and (min-width: 768px) {
+  body .caption {
+    position: absolute;
+    font-size: 14px;
+    width: 125px;
+    height: auto;
+    padding: 4px;
+    top: 4.5%;
+    left: 5%;
+    background-color: rgba(0, 0, 0, 0.05);
+    font-family: Istok Web;
+    color: white;
+  }
+  body .caption div p {
+    margin: 0;
+    text-align: center;
+    letter-spacing: 8px;
+  }
   body .promo video {
     position: fixed;
   }
@@ -192,6 +220,7 @@ body .mercoverlay #slider .left4 {
     display: block;
     text-align: center;
     margin: auto;
+    padding-top: 10px;
   }
   body .promo .rightcorner .social i {
     display: inline-block;
@@ -199,10 +228,9 @@ body .mercoverlay #slider .left4 {
     height: 25px;
     line-height: 25px;
     text-align: center;
-    color: Black;
+    color: white;
     font-size: 16px;
     border-radius: 50%;
-    background-color: White;
     margin-left: 2%;
     margin-right: 2%;
   }
@@ -211,6 +239,23 @@ body .mercoverlay #slider .left4 {
   }
   body .mercoverlay #slider {
     width: 670px;
+  }
+  body .knap {
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    bottom: -50px;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  body .knap i {
+    height: 50px;
+    width: 100px;
+    padding-left: 35%;
+    padding-top: 8%;
+    font-size: 46px;
   }
 }
 @media screen and (min-width: 880px) {
