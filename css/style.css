@@ -9,6 +9,7 @@ body {
   margin: 0;
   display: block;
   overflow: hidden;
+  background-color: black;
 }
 body .promo video {
   position: fixed;
@@ -16,7 +17,7 @@ body .promo video {
           transform: translate(-50%, 0%);
 }
 body .promo .rightcorner {
-  width: 45%;
+  width: 150px;
   height: auto;
   text-align: right;
   position: absolute;
@@ -70,13 +71,96 @@ body .rightbottom i {
   margin-left: 2%;
   margin-right: 2%;
 }
+body .knap {
+  width: 50px;
+  height: 50px;
+  background: white;
+  position: absolute;
+  left: 50%;
+  bottom: -25px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-radius: 50%;
+  overflow: hidden;
+}
+body .knap i {
+  height: 25px;
+  width: 50px;
+  padding-left: 35%;
+  padding-top: 8%;
+  font-size: 23px;
+}
+body .mercoverlay {
+  height: 500px;
+  width: 100%;
+  background-color: white;
+  display: none;
+  position: absolute;
+  bottom: 0;
+}
+body .mercoverlay .control_prev {
+  position: absolute;
+  top: 210px;
+  left: 5%;
+  text-decoration: none;
+  font-size: 60px;
+  font-family: Roboto;
+}
+body .mercoverlay .control_next {
+  position: absolute;
+  top: 210px;
+  right: 5%;
+  text-decoration: none;
+  font-size: 60px;
+  font-family: Roboto;
+}
+body .mercoverlay #slider {
+  width: 335px;
+  height: 400px;
+  overflow: hidden;
+  margin: auto;
+  margin-top: 20px;
+}
+body .mercoverlay #slider .slides {
+  display: block;
+  width: 3015px;
+  height: 400px;
+}
+body .mercoverlay #slider .slide {
+  float: left;
+  list-style-type: none;
+  width: 325px;
+  height: 400px;
+  margin: 0 5px;
+}
+body .mercoverlay #slider .slide p {
+  font-family: Istok;
+  text-align: center;
+  margin-top: 10px;
+  color: grey;
+}
+body .mercoverlay #slider .slide p:nth-of-type(2) {
+  font-weight: bold;
+  color: black;
+}
+body .mercoverlay #slider .left1 {
+  margin-left: -335px;
+}
+body .mercoverlay #slider .left2 {
+  margin-left: -670px;
+}
+body .mercoverlay #slider .left3 {
+  margin-left: -1005px;
+}
+body .mercoverlay #slider .left4 {
+  margin-left: 1340px;
+}
 
 @media screen and (min-width: 490px) {
   body .promo video {
     position: fixed;
   }
   body .promo video .rightcorner {
-    width: 22%;
     top: 1.5%;
     right: 2%;
   }
@@ -124,6 +208,9 @@ body .rightbottom i {
   }
   body .rightbottom {
     display: none;
+  }
+  body .mercoverlay #slider {
+    width: 670px;
   }
 }
 @media screen and (min-width: 880px) {
@@ -201,8 +288,6 @@ body .rightbottom i {
   body .knap {
     width: 100px;
     height: 100px;
-    background: white;
-    position: absolute;
     left: 50%;
     bottom: -50px;
     -webkit-transform: translateX(-50%);
@@ -278,5 +363,8 @@ body .rightbottom i {
   }
   body .mercoverlay #slider .left3 {
     margin-left: -1005px;
+  }
+  body .mercoverlay #slider .left4 {
+    margin-left: 1340px;
   }
 }

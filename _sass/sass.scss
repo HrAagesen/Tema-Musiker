@@ -12,30 +12,29 @@ body{
   margin: 0;
   display: block;
   overflow: hidden;
+  background-color: black;
 
+  .promo{
 
+    video{
+      position: fixed;
+      transform: translate(-50%,0%);
+    }
 
-.promo{
+    .rightcorner{
+      width: 150px;
+      height: auto;
+      text-align: right;
+      position: absolute;
+      top: 2.5%;
+      right: 2%;;
+        // background-color: rgba(0,0,0,.5);
 
- video{
-  position: fixed;
-  transform: translate(-50%,0%);
-}
-
-.rightcorner{
-  width: 45%;
-  height: auto;
-  text-align: right;
-  position: absolute;
-  top: 2.5%;
-  right: 2%;;
-  // background-color: rgba(0,0,0,.5);
-
-  .social{
-    display: none;
+        .social{
+          display: none;
+        }
     }
   }
-}
 
 .caption{
   position: absolute;
@@ -85,6 +84,110 @@ body{
           margin-right: 2%;
           }
         }
+
+// OVERLAY CSS KNAP
+
+        .knap{
+          width: 50px;
+          height: 50px;
+          background: white;
+          position: absolute;
+          left: 50%;
+          bottom: -25px;
+          transform: translateX(-50%);
+          border-radius: 50%;
+          overflow: hidden;
+
+          i {
+            height: 25px;
+            width: 50px;
+            padding-left: 35%;
+            padding-top: 8%;
+            font-size: 23px;
+          }
+        }
+
+// OVERLAY CSS
+
+        .mercoverlay {
+          height: 500px;
+          width: 100%;
+          background-color: white;
+          // aktiver når du er færdig med at style
+          display: none;
+          position: absolute;
+          bottom: 0;
+
+          .control_prev{
+            position: absolute;
+            top: 210px;
+            left: 5%;
+            text-decoration: none;
+            font-size: 60px;
+            font-family: Roboto;
+          }
+
+          .control_next{
+            position: absolute;
+            top: 210px;
+            right: 5%;
+            text-decoration: none;
+            font-size: 60px;
+            font-family: Roboto;
+          }
+
+
+
+          #slider {
+            width: 335px;
+            height: 400px;
+            overflow: hidden;
+            margin: auto;
+            margin-top: 20px;
+
+            .slides {
+              display: block;
+              width: 3015px;
+              height: 400px;
+            }
+
+            .slide {
+              float: left;
+              list-style-type: none;
+              width: 325px;
+              height: 400px;
+              margin: 0 5px;
+
+              p{
+                font-family: Istok;
+                text-align: center;
+                margin-top: 10px;
+                color: grey;
+
+                &:nth-of-type(2) {
+                  font-weight: bold;
+                  color: black;
+                }
+              }
+            }
+
+            .left1 {
+              margin-left: -335px;
+            }
+
+              .left2 {
+                margin-left: -670px;
+            }
+
+            .left3{
+              margin-left: -1005px;
+            }
+
+            .left4 {
+              margin-left: 1340px;
+            }
+          }
+        }
 }
 
     @media screen and (min-width: 490px) {
@@ -98,7 +201,6 @@ body{
         position: fixed;
 
         .rightcorner{
-        width: 22%;
         top: 1.5%;
         right: 2%;
 
@@ -184,6 +286,10 @@ body{
     .rightbottom{
       display: none;
     }
+
+    .mercoverlay #slider {
+      width: 670px;
+    }
 }
 }
 @media screen and (min-width: 880px){
@@ -250,6 +356,109 @@ body{
          color: white;
        }
      }
+
+ //     // OVERLAY CSS
+ //     .knap{
+ //       width: 100px;
+ //       height: 100px;
+ //       left: 50%;
+ //       bottom: -50px;
+ //       transform: translateX(-50%);
+ //       border-radius: 50%;
+ //       overflow: hidden;
+ //
+ //       i {
+ //         height: 50px;
+ //         width: 100px;
+ //         padding-left: 35%;
+ //         padding-top: 8%;
+ //         font-size: 46px;
+ //       }
+ //     }
+ //
+ //
+ //
+ // //  Steffens kode ----------------
+ //
+ //     .mercoverlay {
+ //       height: 500px;
+ //       width: 100%;
+ //       background-color: white;
+ //       // aktiver når du er færdig med at style
+ //       display: none;
+ //       position: absolute;
+ //       bottom: 0;
+ //
+ //       .control_prev{
+ //         position: absolute;
+ //         top: 210px;
+ //         left: 5%;
+ //         text-decoration: none;
+ //         font-size: 60px;
+ //         font-family: Roboto;
+ //       }
+ //
+ //       .control_next{
+ //         position: absolute;
+ //         top: 210px;
+ //         right: 5%;
+ //         text-decoration: none;
+ //         font-size: 60px;
+ //         font-family: Roboto;
+ //       }
+ //
+ //
+ //
+ //       #slider {
+ //         width: 1005px;
+ //         height: 400px;
+ //         overflow: hidden;
+ //         margin: auto;
+ //         margin-top: 20px;
+ //
+ //         .slides {
+ //           display: block;
+ //           width: 3015px;
+ //           height: 400px;
+ //         }
+ //
+ //         .slide {
+ //           float: left;
+ //           list-style-type: none;
+ //           width: 325px;
+ //           height: 400px;
+ //           margin: 0 5px;
+ //
+ //           p{
+ //             font-family: Istok;
+ //             text-align: center;
+ //             margin-top: 10px;
+ //             color: grey;
+ //
+ //             &:nth-of-type(2) {
+ //               font-weight: bold;
+ //               color: black;
+ //             }
+ //           }
+ //         }
+ //
+ //         .left1 {
+ //           margin-left: -335px;
+ //         }
+ //
+ //           .left2 {
+ //             margin-left: -670px;
+ //         }
+ //
+ //         .left3{
+ //           margin-left: -1005px;
+ //         }
+ //
+ //         .left4 {
+ //           margin-left: 1340px;
+ //         }
+ //       }
+ //     }
    }
 
  }
@@ -296,12 +505,9 @@ body{
     }
 
     // OVERLAY CSS
-
     .knap{
       width: 100px;
       height: 100px;
-      background: white;
-      position: absolute;
       left: 50%;
       bottom: -50px;
       transform: translateX(-50%);
@@ -316,6 +522,8 @@ body{
         font-size: 46px;
       }
     }
+
+
 
 //  Steffens kode ----------------
 
@@ -391,6 +599,10 @@ body{
 
         .left3{
           margin-left: -1005px;
+        }
+
+        .left4 {
+          margin-left: 1340px;
         }
       }
     }

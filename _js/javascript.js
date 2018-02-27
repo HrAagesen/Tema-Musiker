@@ -100,8 +100,8 @@ $(function() {
     $slideContainer.animate({'margin-left': '+='+width}, animationSpeed, function () {
       currentSlide--;
         if (currentSlide === -2) {
-          currentSlide = 1;
-          $slideContainer.css('margin-left', 0);
+          currentSlide = 2;
+          $slideContainer.css('margin-left', -335);
         }
       });
     });
