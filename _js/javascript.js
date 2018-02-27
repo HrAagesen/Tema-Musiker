@@ -61,12 +61,13 @@ $(function(){
 
   const $menu = $('.knap');
   const $mercOverlay = $('.mercoverlay');
+  const $close = $('.close');
 
   $menu.on('click', () => {
     $mercOverlay.show();
   })
 // aktiver inden færdig
-  $mercOverlay.on('mouseleave', () => {
+  $close.on('click', () => {
     $mercOverlay.hide();
   })
 
@@ -100,8 +101,8 @@ $(function() {
     $slideContainer.animate({'margin-left': '+='+width}, animationSpeed, function () {
       currentSlide--;
         if (currentSlide === -2) {
-          currentSlide = 2;
-          $slideContainer.css('margin-left', -335);
+          currentSlide = 4;
+          $slideContainer.css('margin-left', -1005);
         }
       });
     });
