@@ -16,27 +16,25 @@ body .promo video {
           transform: translate(-50%, 0%);
 }
 body .promo .rightcorner {
-  width: 22%;
+  width: 45%;
   height: auto;
-  padding: 0.5%;
   text-align: right;
   position: absolute;
-  top: 1.5%;
+  top: 2.5%;
   right: 2%;
-  background-color: rgba(0, 0, 0, 0.5);
 }
 body .promo .rightcorner .social {
   display: none;
 }
 body .caption {
   position: absolute;
-  font-size: 60%;
-  width: 20%;
+  font-size: 14px;
+  width: 112px;
   height: auto;
   padding: 4px;
-  top: 1.5%;
-  left: 2%;
-  background-color: rgba(0, 0, 0, 0.5);
+  top: 4.5%;
+  left: 5%;
+  background-color: rgba(0, 0, 0, 0.05);
 }
 body .caption p {
   margin: 0;
@@ -82,12 +80,6 @@ body .rightbottom i {
     top: 1.5%;
     right: 2%;
   }
-  body .promo video .rightcorner .caption {
-    font-size: 12px;
-    width: 20%;
-    top: 1.5%;
-    left: 2%;
-  }
   body .rightbottom {
     width: 110px;
     top: 93%;
@@ -103,7 +95,7 @@ body .rightbottom i {
     font-size: 80%;
   }
 }
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 768px) {
   body .promo video {
     position: fixed;
   }
@@ -130,15 +122,6 @@ body .rightbottom i {
     margin-left: 2%;
     margin-right: 2%;
   }
-  body .caption {
-    font-size: 18px;
-    width: 22%;
-    top: 2.5%;
-    left: 1.5%;
-  }
-  body .caption p {
-    padding: 2px;
-  }
   body .rightbottom {
     display: none;
   }
@@ -152,7 +135,7 @@ body .rightbottom i {
     width: 100%;
   }
   body .promo .rightcorner {
-    width: 20%;
+    width: 150px;
     top: 4%;
     right: 2.5%;
   }
@@ -161,29 +144,30 @@ body .rightbottom i {
     text-align: center;
     margin: auto;
   }
-  body .promo .rightcorner .social i {
-    width: 33px;
+  body .promo .rightcorner .social a {
+    width: 25%;
     height: 33px;
-    line-height: 33px;
-    font-size: 20px;
   }
-  body .caption {
-    font-size: 25px;
-    width: 20%;
-    top: 4%;
-    left: 2.5%;
+  body .promo .rightcorner .social a i {
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    font-size: 13px;
+    margin: 0;
   }
   body .rightbottom {
     display: none;
   }
-  body #mute {
-    left: 45%;
+  body #mybutton {
+    width: 100%;
     position: absolute;
+    top: 10px;
+    text-align: center;
+  }
+  body #mybutton #mute {
     display: block;
-    top: 4%;
-    font-size: 65px;
+    font-size: 25px;
     padding: 1%;
-    background-color: rgba(0, 0, 0, 0.2);
     color: white;
   }
 }
@@ -193,11 +177,6 @@ body .rightbottom i {
     -webkit-transform: none;
             transform: none;
     width: 100%;
-  }
-  body .promo .rightcorner {
-    width: 20%;
-    top: 4%;
-    right: 2.5%;
   }
   body .promo .rightcorner .social {
     display: block;

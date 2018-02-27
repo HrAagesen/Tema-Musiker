@@ -23,29 +23,29 @@ body{
 }
 
 .rightcorner{
-  width: 22%;
+  width: 45%;
   height: auto;
-  padding: 0.5%;
   text-align: right;
   position: absolute;
-  top: 1.5%;
-  right: 2%;
-  background-color: rgba(0,0,0,.5);
+  top: 2.5%;
+  right: 2%;;
+  // background-color: rgba(0,0,0,.5);
 
   .social{
     display: none;
     }
   }
 }
+
 .caption{
-    position: absolute;
-    font-size: 60%;
-    width: 20%;
-    height: auto;
-    padding: 4px;
-    top: 1.5%;
-    left: 2%;
-    background-color: rgba(0,0,0,.5);
+  position: absolute;
+  font-size: 14px;
+  width: 112px;
+  height: auto;
+  padding: 4px;
+  top: 4.5%;
+  left: 5%;
+  background-color: rgba(0, 0, 0, 0.05);
 
       p{
       margin: 0;
@@ -103,12 +103,12 @@ body{
         right: 2%;
 
 
-         .caption{
-          font-size: 12px;
-          width: 20%;
-          top: 1.5%;
-          left: 2%;
-        }
+         // .caption{
+         //  font-size: 12px;
+         //  width: 20%;
+         //  top: 1.5%;
+         //  left: 2%;
+        // }
       }
     }
 }
@@ -131,7 +131,7 @@ body{
     }
   }
 }
-@media screen and (min-width: 680px){
+@media screen and (min-width: 768px){
 
   body{
 
@@ -169,17 +169,17 @@ body{
       }
     }
 }
-    .caption{
-    font-size: 18px;
-    width: 22%;
-    top: 2.5%;
-    left: 1.5%;
-
-
-      p{
-      padding: 2px;
-    }
-    }
+    // .caption{
+    // font-size: 18px;
+    // width: 22%;
+    // top: 2.5%;
+    // left: 1.5%;
+    //
+    //
+    //   p{
+    //   padding: 2px;
+    // }
+    // }
 
     .rightbottom{
       display: none;
@@ -199,7 +199,7 @@ body{
   }
 
   .rightcorner{
-  width: 20%;
+  width: 150px;
   top: 4%;
   right: 2.5%;
 
@@ -209,35 +209,46 @@ body{
   text-align: center;
   margin: auto;
 
-    i{
-    width: 33px;
-    height: 33px;
-    line-height: 33px;
-    font-size: 20px;
-    }
+      a{
+
+        width: 25%;
+        height: 33px;
+
+        i{
+        width: 26px;
+        height: 26px;
+        line-height: 26px;
+        font-size: 13px;
+        margin: 0;
+        }
+      }
     }
   }
 }
 
-.caption{
-  font-size: 25px;
-  width: 20%;
-  top: 4%;
-  left: 2.5%;
-}
+// .caption{
+//   font-size: 25px;
+//   width: 20%;
+//   top: 4%;
+//   left: 2.5%;
+// }
   .rightbottom{
     display: none;
   }
 
-     #mute{
-       left: 45%;
-       position: absolute;
-       display: block;
-       top: 4%;
-       font-size: 65px;
-       padding: 1%;
-       background-color: rgba(0,0,0,0.2);
-       color: white;
+  #mybutton {
+    width: 100%;
+    position: absolute;
+    top: 10px;
+    text-align: center;
+
+       #mute{
+         display: block;
+         font-size: 25px;
+         padding: 1%;
+         // background-color: rgba(0,0,0,0.2);
+         color: white;
+       }
      }
    }
 
@@ -257,9 +268,6 @@ body{
   }
 
   .rightcorner{
-    width: 20%;
-    top: 4%;
-    right: 2.5%;
 
     .social{
     display: block;
