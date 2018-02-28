@@ -154,6 +154,10 @@ body .mercoverlay #slider .slide {
   height: 400px;
   margin: 0 5px;
 }
+body .mercoverlay #slider .slide img {
+  width: 100%;
+  height: auto;
+}
 body .mercoverlay #slider .slide p {
   font-family: Istok Web;
   text-align: center;
