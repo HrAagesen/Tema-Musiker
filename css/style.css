@@ -33,7 +33,6 @@ body .promo .rightcorner .social {
 body .caption {
   position: absolute;
   font-size: 10px;
-  width: 115px;
   height: auto;
   padding: 4px;
   top: 4.5%;
@@ -206,7 +205,6 @@ body .mercoverlay #slider .left4 {
   body .caption {
     position: absolute;
     font-size: 14px;
-    width: 125px;
     height: auto;
     padding: 4px;
     top: 4.5%;
@@ -279,7 +277,7 @@ body .mercoverlay #slider .left4 {
     width: 100%;
   }
   body .promo .rightcorner {
-    width: 150px;
+    width: 140px;
     top: 4%;
     right: 2.5%;
   }
@@ -293,10 +291,7 @@ body .mercoverlay #slider .left4 {
     height: 33px;
   }
   body .promo .rightcorner .social a i {
-    width: 26px;
-    height: 26px;
-    line-height: 26px;
-    font-size: 13px;
+    font-size: 15px;
     margin: 0;
   }
   body .rightbottom {
@@ -322,20 +317,27 @@ body .mercoverlay #slider .left4 {
             transform: none;
     width: 100%;
   }
+  body .promo .rightcorner {
+    width: 240px;
+    top: 4%;
+    right: 2.5%;
+  }
   body .promo .rightcorner .social {
     display: block;
     text-align: center;
     margin: auto;
   }
-  body .promo .rightcorner .social i {
-    width: 33px;
+  body .promo .rightcorner .social a {
+    width: 25%;
     height: 33px;
-    line-height: 33px;
-    font-size: 20px;
   }
-  body .promo .caption {
+  body .promo .rightcorner .social a i {
+    width: 50px;
     font-size: 30px;
-    width: 20%;
+    margin: 0;
+  }
+  body .caption {
+    font-size: 30px;
     top: 4%;
     left: 2.5%;
   }
